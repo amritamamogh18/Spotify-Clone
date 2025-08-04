@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fab fa-spotify"></i>
+        <span>Spotify</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+          <li><a href="#"><i class="fas fa-book"></i> Your Library</a></li>
+        </ul>
+      </nav>
+      
+      <div class="playlists">
+        <div class="playlist-header">
+          <button class="create-playlist">
+            <i class="fas fa-plus"></i>
+            <span>Create Playlist</span>
+          </button>
+          <button class="liked-songs">
+            <i class="fas fa-heart"></i>
+            <span>Liked Songs</span>
+          </button>
+        </div>
+        
+        <div class="playlist-list">
+          <ul>
+            <li><a href="#">Today's Top Hits</a></li>
+            <li><a href="#">Discover Weekly</a></li>
+            <li><a href="#">Chill Vibes</a></li>
+            <li><a href="#">Workout Mix</a></li>
+            <li><a href="#">Road Trip</a></li>
+            <li><a href="#">Study Focus</a></li>
+            <li><a href="#">Sleep</a></li>
+            <li><a href="#">Party</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="install-app">
+        <a href="#">
+          <i class="fas fa-arrow-down"></i>
+          <span>Install App</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <div class="nav-buttons">
+          <button class="back-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="forward-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="user-menu">
+          <button class="upgrade-btn">Upgrade</button>
+          <div class="user-profile">
+            <img src="me.jpg" alt="User profile">
+            <span>Amritam Amogh</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <section class="browse">
+        <h1>Good afternoon</h1>
+        
+        <div class="playlist-grid">
+          <div class="playlist-card big">
+            <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517a5a33e6e91d7b5a7" alt="Today's Top Hits">
+            <h3>Today's Top Hits</h3>
+            <p>Taylor Swift is on top of the Hottest 50!</p>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002a980b152e708b33c6516d10c" alt="Discover Weekly">
+            <h3>Discover Weekly</h3>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002d72ef75e14ca6f60ea2364c2" alt="Chill Vibes">
+            <h3>Chill Vibes</h3>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002d0d0d0d0d0d0d0d0d0d0d0d" alt="Workout Mix">
+            <h3>Workout Mix</h3>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002a980b152e708b33c6516d10c" alt="Road Trip">
+            <h3>Road Trip</h3>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517a5a33e6e91d7b5a7" alt="Study Focus">
+            <h3>Study Focus</h3>
+          </div>
+        </div>
+
+        <h2>Made For You</h2>
+        <div class="playlist-grid">
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002d72ef75e14ca6f60ea2364c2" alt="Daily Mix 1">
+            <h3>Daily Mix 1</h3>
+            <p>Taylor Swift, Dua Lipa, and more</p>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002a980b152e708b33c6516d10c" alt="Daily Mix 2">
+            <h3>Daily Mix 2</h3>
+            <p>Ed Sheeran, Justin Bieber, and more</p>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517a5a33e6e91d7b5a7" alt="Daily Mix 3">
+            <h3>Daily Mix 3</h3>
+            <p>The Weeknd, Post Malone, and more</p>
+          </div>
+          
+          <div class="playlist-card">
+            <img src="https://i.scdn.co/image/ab67706f00000002d0d0d0d0d0d0d0d0d0d0d0d" alt="Daily Mix 4">
+            <h3>Daily Mix 4</h3>
+            <p>Drake, Kendrick Lamar, and more</p>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="recently-played">
+          <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228" alt="Album Cover">
+            <div class="song-info">
+              <h3>Blinding Lights</h3>
+              <p>The Weeknd</p>
+            </div>
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+          </div>
+          
+          <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d00001e029ad3e9959f48d513886b8933" alt="Album Cover">
+            <div class="song-info">
+              <h3>Levitating</h3>
+              <p>Dua Lipa</p>
+            </div>
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+          </div>
+          
+          <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d00001e02668e3aca3167e6e569a9aa20" alt="Album Cover">
+            <div class="song-info">
+              <h3>Stay</h3>
+              <p>The Kid LAROI, Justin Bieber</p>
+            </div>
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+          </div>
+          
+          <div class="song-card">
+            <img src="https://i.scdn.co/image/ab67616d00001e02c7b6a2c7245d17d227a45a5b" alt="Album Cover">
+            <div class="song-info">
+              <h3>good 4 u</h3>
+              <p>Olivia Rodrigo</p>
+            </div>
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Player -->
+    <footer class="player">
+      <div class="player-song">
+        <img src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228" alt="Album Cover">
+        <div class="song-details">
+          <h4>Blinding Lights</h4>
+          <p>The Weeknd</p>
+        </div>
+        <button class="like-btn"><i class="far fa-heart"></i></button>
+      </div>
+      
+      <div class="player-controls">
+        <div class="control-buttons">
+          <button><i class="fas fa-random"></i></button>
+          <button><i class="fas fa-step-backward"></i></button>
+          <button class="play-pause"><i class="fas fa-pause"></i></button>
+          <button><i class="fas fa-step-forward"></i></button>
+          <button><i class="fas fa-redo"></i></button>
+        </div>
+        
+        <div class="progress-bar">
+          <span class="time">0:30</span>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <span class="time">3:20</span>
+        </div>
+      </div>
+      
+      <div class="player-options">
+        <button><i class="fas fa-list"></i></button>
+        <button><i class="fas fa-laptop"></i></button>
+        <button><i class="fas fa-volume-up"></i></button>
+        <div class="volume-slider">
+          <input type="range" min="0" max="100" value="80">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
