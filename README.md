@@ -50,3 +50,8 @@ npm install
 3. Start the app
 
 npm start
+```
+
+Screenshot
+
+<img width="1916" height="1089" alt="a421f182-782b-4e3b-93e8-1ae52a05c966-1" src="https://github.com/user-attachments/assets/3a611782-873a-4aa3-a819-fd0b355bb598" />
